@@ -125,9 +125,10 @@ export default function Home() {
           {features.map((feature, index) => (
             <Card
               key={index}
-              className="group card-hover border border-gray-200 dark:border-gray-700 glass dark:glass-dark overflow-hidden animate-fade-in-up"
+              className="group card-hover border border-gray-200 dark:border-gray-700 overflow-hidden animate-fade-in-up dark:gradient-bg-dark "
               style={{ animationDelay: feature.delay }}
             >
+
               <CardContent className="p-6">
                 <div className={`w-14 h-14 rounded-2xl bg-gradient-to-r ${feature.gradient} flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-md`}>
                   <feature.icon className="h-6 w-6 text-white" />
@@ -163,7 +164,7 @@ export default function Home() {
           {semesterData.map((semester, index) => (
             <Card
               key={semester.id}
-              className="group card-hover border border-gray-200 dark:border-gray-700 glass dark:glass-dark overflow-hidden animate-fade-in-up"
+              className="group card-hover border border-gray-200 dark:border-gray-700 overflow-hidden animate-fade-in-up dark:gradient-bg-dark"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <CardHeader className="pb-3">
@@ -222,7 +223,7 @@ export default function Home() {
               return (
                 <Card
                   key={subject.id}
-                  className="group card-hover border border-gray-200 dark:border-gray-700 glass dark:glass-dark overflow-hidden animate-fade-in-up"
+                  className="group card-hover border border-gray-200 dark:border-gray-700 overflow-hidden animate-fade-in-up dark:gradient-bg-dark"
                   style={{ animationDelay: `${index * 50}ms` }}
                 >
                   <div className={`h-2 bg-gradient-to-r ${subject.gradient}`} />
