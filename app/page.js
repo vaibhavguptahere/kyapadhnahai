@@ -82,13 +82,13 @@ export default function Home() {
         <div className="space-y-6 animate-fade-in-up">
 
           <h1 className="text-5xl md:text-7xl font-bold font-poppins bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-600 bg-clip-text text-transparent leading-tight tracking-tight">
-            YOUR ACADEMIC JOURNEY
+            Confused??
           </h1>
           <h2 className="text-4xl md:text-6xl font-bold font-poppins text-foreground">
-            MADE SIMPLE
+            KyaPadhnaHai 😵
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-medium font-inter">
-            Curated resources, study tips, and guidance from successful seniors.
+            Here is a solution to all your academic worries.
             <br />
             <span className="text-lg opacity-75">Learn smarter, not harder with our comprehensive study materials.</span>
           </p>
