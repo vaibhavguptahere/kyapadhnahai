@@ -3,11 +3,11 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-card text-card-foreground border-t border-border py-12 px-6 md:px-16  [background-color:rgba(249,249,249,0.95)]">
+    <footer className="bg-card text-card-foreground border-t border-border py-12 px-6 md:px-16 light:[background-color:rgba(249,249,249,0.95)]">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
         {/* Left Intro */}
         <div className="md:col-span-2">
-          <h2 className="text-2xl font-bold text-primary font-poppins">KyaPadhnaHai</h2>
+          <h2 className="text-2xl font-bold text-primary font-poppins">KyaPadhnaHai?</h2>
           <p className="text-muted-foreground mt-2 text-sm leading-relaxed font-inter">
             Your personalized academic hub for mastering Web Development, DSA, and beyond.
           </p>
@@ -70,7 +70,7 @@ export default function Footer() {
       {/* Bottom */}
       <div className="mt-10 border-t border-border pt-6 text-sm text-muted-foreground text-center font-inter">
         <p className="flex items-center justify-center gap-1">
-          © 2025 KyaPadhnaHai. Built with <Heart className="w-4 h-4 text-red-500" /> for students.
+          © 2025 KyaPadhnaHai? Built with <Heart className="w-4 h-4 text-red-500" /> for students.
         </p>
       </div>
     </footer>

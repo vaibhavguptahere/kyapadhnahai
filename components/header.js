@@ -115,7 +115,7 @@ export function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="flex items-center space-x-3 text-sm font-medium dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 py-3 px-4 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 "
+                    className="flex items-center space-x-3 text-sm font-medium dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 py-3 px-4 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 light:[background-color:white] "
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <item.icon className="h-4 w-4" />
