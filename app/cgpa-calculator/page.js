@@ -78,8 +78,8 @@ export default function CGPACalculator() {
                 </p>
             </div>
 
-            <Card className="glass dark:glass-dark border-0 shadow-card hover:shadow-card-hover transition-all duration-300">
-                <CardHeader className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 border-b border-white/10 p-6">
+            <Card className="dark:gradient-bg-dark border-0 shadow-card hover:shadow-card-hover transition-all duration-300">
+                <CardHeader className="bg-gradient-to-r from-purple-700/10 to-pink-700/10 border-b border-white/10 p-6">
                     <CardTitle className="text-2xl font-bold font-poppins flex items-center gap-3 text-center justify-center">
                         <GraduationCap className="w-6 h-6" /> CGPA Calculator
                     </CardTitle>
@@ -89,7 +89,7 @@ export default function CGPACalculator() {
                     {grades.map((row, index) => (
                         <div
                             key={index}
-                            className="grid grid-cols-2 gap-4 items-center glass dark:glass-dark p-4 rounded-xl hover:bg-white/10 dark:hover:bg-white/5 transition-all duration-200 animate-slide-up"
+                            className="grid grid-cols-2 gap-4 items-center dark:gradient-bg-dark p-4 rounded-xl hover:bg-white/10 dark:hover:bg-white/5 transition-all duration-200 animate-slide-up"
                             style={{ animationDelay: `${index * 50}ms` }}
                         >
                             <Input
@@ -109,7 +109,7 @@ export default function CGPACalculator() {
                                 onChange={(e) =>
                                     handleInputChange(index, "grade", e.target.value)
                                 }
-                                className="text-sm rounded-xl border-purple-500/20 focus:border-purple-500/50 focus:ring-purple-500/20"
+                                className="text-sm rounded-xl border-purple-700/20 focus:border-purple-700/50 focus:ring-purple-700/20"
                             />
                         </div>
                     ))}
@@ -118,7 +118,7 @@ export default function CGPACalculator() {
                         <Button
                             onClick={addRow}
                             variant="ghost"
-                            className="text-purple-600 hover:text-purple-800 dark:text-purple-300 dark:hover:text-purple-100 flex gap-2 rounded-xl hover:bg-purple-500/10 transition-all duration-200 hover:scale-105"
+                            className="text-purple-800 hover:text-purple-800 dark:text-purple-300 dark:hover:text-purple-900 flex gap-2 rounded-xl transition-all duration-200 hover:scale-105"
                         >
                             <PlusCircle className="h-4 w-4" />
                             Add Semester
