@@ -72,7 +72,7 @@ export default function ResourcePage() {
 
       {/* Resource Tabs */}
       <Tabs defaultValue="playlists" className="space-y-8">
-        <TabsList className="grid w-full grid-cols-3 rounded-2xl glass dark:glass-dark">
+        <TabsList className="grid w-full grid-cols-3 rounded-2xl dark:gradient-bg-dark">
           <TabsTrigger value="playlists" className="rounded-xl">
             <Play className="h-4 w-4 mr-2" />
             Playlists
@@ -91,7 +91,7 @@ export default function ResourcePage() {
         <TabsContent value="playlists" className="space-y-6">
           <div className="grid gap-6">
             {resource.resources.playlists.map((playlist, index) => (
-              <Card key={index} className="glass dark:glass-dark border-0 hover:shadow-card-hover transition-all duration-300 group">
+              <Card key={index} className="dark:gradient-bg-dark border-0 hover:shadow-card-hover transition-all duration-300 group">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="space-y-2">
@@ -129,7 +129,7 @@ export default function ResourcePage() {
         <TabsContent value="notes" className="space-y-6">
           <div className="grid gap-6">
             {resource.resources.notes.map((note, index) => (
-              <Card key={index} className="glass dark:glass-dark border-0 hover:shadow-card-hover transition-all duration-300 group">
+              <Card key={index} className="dark:gradient-bg-dark border-0 hover:shadow-card-hover transition-all duration-300 group">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="space-y-2">
@@ -162,7 +162,7 @@ export default function ResourcePage() {
         <TabsContent value="practice" className="space-y-6">
           <div className="grid gap-6">
             {resource.resources.practice.map((practice, index) => (
-              <Card key={index} className="glass dark:glass-dark border-0 hover:shadow-card-hover transition-all duration-300 group">
+              <Card key={index} className="dark:gradient-bg-dark border-0 hover:shadow-card-hover transition-all duration-300 group">
                 <CardHeader>
                   <div className="flex items-start justify-between">
                     <div className="space-y-2">
