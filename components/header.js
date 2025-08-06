@@ -33,7 +33,7 @@ export function Header() {
     { name: 'Sem-2', href: '/semester/semester-2', icon: BookOpen },
     { name: 'Tips', href: '/tips', icon: Users },
     { name: 'DSA', href: '/resources/dsa', icon: Brain },
-    { name: 'Web Dev', href: 'resources/web-development', icon: Computer },
+    { name: 'Web Dev', href: '/resources/web-development', icon: Computer },
   ];
 
   if (!mounted) {
@@ -115,7 +115,7 @@ export function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="flex items-center space-x-3 text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 py-3 px-4 rounded-lg hover:bg-black/5 dark:hover:bg-white/10"
+                    className="flex items-center space-x-3 text-sm font-medium dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-all duration-200 py-3 px-4 rounded-lg hover:bg-black/5 dark:hover:bg-white/10 "
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <item.icon className="h-4 w-4" />
