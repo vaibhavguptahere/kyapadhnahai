@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-card text-card-foreground border-t border-border py-12 px-6 md:px-16 light:[background-color:rgba(249,249,249,0.95)]">
+    <footer className="bg-card text-card-foreground border-t border-border py-12 px-6 md:px-16 dark:gradient-bg-light">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
         {/* Left Intro */}
         <div className="md:col-span-2">

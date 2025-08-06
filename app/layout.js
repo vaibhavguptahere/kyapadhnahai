@@ -31,11 +31,19 @@ export default function RootLayout({ children }) {
           <LenisProvider>
             <ScrollProgressBar />
             <div className="min-h-screen relative overflow-hidden bg-background text-foreground">
-              {/* Floating gradient blobs */}
-              <div className="floating-blob top-20 left-20 w-96 h-96 bg-gradient-to-r from-primary/10 to-secondary/10" />
-              <div className="floating-blob top-40 right-20 w-80 h-80 bg-gradient-to-r from-secondary/10 to-accent/10" />
-              <div className="floating-blob bottom-20 left-1/3 w-72 h-72 bg-gradient-to-r from-accent/10 to-primary/10" />
+              <div className="absolute inset-0 -z-10 overflow-hidden">
+                {/* Pink Glow */}
+                <div className="absolute top-[-10%] left-[-10%] h-[500px] w-[500px] rounded-full bg-pink-400 dark:bg-pink-600 opacity-30 blur-3xl animate-blob"></div>
 
+                {/* Violet Glow */}
+                <div className="absolute top-[10%] left-[70%] h-[450px] w-[450px] rounded-full bg-violet-400 dark:bg-violet-600 opacity-30 blur-3xl animate-blob animation-delay-2000"></div>
+
+                {/* Sky Blue Glow */}
+                <div className="absolute top-[40%] left-[7%] h-[400px] w-[400px] rounded-full bg-sky-400 dark:bg-sky-600 opacity-30 blur-3xl animate-blob animation-delay-4000"></div>
+
+                {/* Orange Glow */}
+                <div className="absolute top-[80%] left-[70%] h-[400px] w-[400px] rounded-full bg-purple-400 dark:bg-purple-400 opacity-25 blur-3xl animate-blob animation-delay-3000"></div>
+              </div>
               <Header />
               <main className="container mx-auto px-4 py-8 relative z-10">
                 {children}
