@@ -72,14 +72,10 @@ export default function ResourcePage() {
 
       {/* Resource Tabs */}
       <Tabs defaultValue="playlists" className="space-y-8">
-        <TabsList className="grid w-full grid-cols-3 rounded-2xl dark:gradient-bg-dark">
+        <TabsList className="grid w-full grid-cols-2 rounded-2xl dark:gradient-bg-dark">
           <TabsTrigger value="playlists" className="rounded-xl">
             <Play className="h-4 w-4 mr-2" />
             Playlists
-          </TabsTrigger>
-          <TabsTrigger value="notes" className="rounded-xl">
-            <FileText className="h-4 w-4 mr-2" />
-            Notes
           </TabsTrigger>
           <TabsTrigger value="practice" className="rounded-xl">
             <PenTool className="h-4 w-4 mr-2" />
@@ -103,10 +99,6 @@ export default function ResourcePage() {
                           <Users className="h-4 w-4" />
                           <span>{playlist.provider}</span>
                         </div>
-                        <div className="flex items-center space-x-1">
-                          <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                          <span>4.8</span>
-                        </div>
                       </div>
                     </div>
                     <Button asChild className="rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 hover:shadow-neon">
@@ -119,39 +111,6 @@ export default function ResourcePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">{playlist.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </TabsContent>
-
-        {/* Notes Tab */}
-        <TabsContent value="notes" className="space-y-6">
-          <div className="grid gap-6">
-            {resource.resources.notes.map((note, index) => (
-              <Card key={index} className="dark:gradient-bg-dark border-0 hover:shadow-card-hover transition-all duration-300 group">
-                <CardHeader>
-                  <div className="flex items-start justify-between">
-                    <div className="space-y-2">
-                      <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                        {note.title}
-                      </CardTitle>
-                      <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-                        <Badge variant="outline" className="text-xs">
-                          {note.type}
-                        </Badge>
-                      </div>
-                    </div>
-                    <Button asChild variant="outline" className="rounded-xl hover:bg-accent">
-                      <a href={note.url} target="_blank" rel="noopener noreferrer">
-                        <FileText className="h-4 w-4 mr-2" />
-                        Download
-                      </a>
-                    </Button>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{note.description}</p>
                 </CardContent>
               </Card>
             ))}

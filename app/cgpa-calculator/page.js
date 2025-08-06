@@ -152,7 +152,7 @@ export default function CGPACalculator() {
                                     );
                                 })()}
                             </div>
-                            <div className="glass dark:glass-dark rounded-xl p-4 max-w-md mx-auto">
+                            <div className="dark:gradient-bg-dark rounded-xl p-4 max-w-md mx-auto">
                                 <div className="text-sm text-muted-foreground space-y-1 font-inter">
                                     <div className="flex justify-between">
                                         <span>Total Credits:</span>

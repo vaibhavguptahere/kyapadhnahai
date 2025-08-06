@@ -10,29 +10,15 @@ export const resourcesData = [
       playlists: [
         {
           title: 'Complete Web Development Course',
-          provider: 'CodeHelp',
-          url: 'https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA',
-          description: 'Comprehensive web development course covering HTML, CSS, JavaScript, and React'
+          provider: 'Code With Harry',
+          url: 'https://www.youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w',
+          description: 'Complete frontend and backend development course'
         },
         {
-          title: 'Frontend Development Bootcamp',
+          title: 'Web Development Course',
           provider: 'Apna College',
-          url: 'https://www.youtube.com/playlist?list=PLGjplNEQ1it_oTvuLRNqXfz_v_0pq6unW',
-          description: 'Complete frontend development course from basics to advanced'
-        }
-      ],
-      notes: [
-        {
-          title: 'Web Development Cheat Sheet',
-          type: 'PDF',
-          url: 'https://drive.google.com/file/d/example1',
-          description: 'Quick reference for HTML, CSS, and JavaScript'
-        },
-        {
-          title: 'React.js Complete Notes',
-          type: 'PDF',
-          url: 'https://drive.google.com/file/d/example2',
-          description: 'Comprehensive React.js notes with examples'
+          url: 'https://www.youtube.com/playlist?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n',
+          description: 'Comprehensive web development course covering HTML, CSS and JavaScript.'
         }
       ],
       practice: [
@@ -64,30 +50,16 @@ export const resourcesData = [
     resources: {
       playlists: [
         {
-          title: 'Striver A2Z DSA Course',
-          provider: 'Striver',
-          url: 'https://www.youtube.com/playlist?list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz',
+          title: 'C++ Placement Course',
+          provider: 'Apna College',
+          url: 'https://www.youtube.com/playlist?list=PLfqMhTWNBTe0b2nM6JHVCnAkhQRGiZMSJ',
           description: 'Complete DSA course from basics to advanced level'
         },
         {
-          title: 'DSA Supreme Course',
-          provider: 'CodeHelp',
-          url: 'https://www.youtube.com/playlist?list=PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA',
+          title: 'DSA Basics in C++',
+          provider: 'College Wallah',
+          url: 'https://youtu.be/e7sAf4SbS_g?si=qx5QFbQlE_Xyxppm',
           description: 'Comprehensive DSA course with problem-solving techniques'
-        }
-      ],
-      notes: [
-        {
-          title: 'DSA Cheat Sheet',
-          type: 'PDF',
-          url: 'https://drive.google.com/file/d/example3',
-          description: 'Quick reference for all DSA concepts and algorithms'
-        },
-        {
-          title: 'Time Complexity Guide',
-          type: 'PDF',
-          url: 'https://drive.google.com/file/d/example4',
-          description: 'Complete guide to analyzing time and space complexity'
         }
       ],
       practice: [
