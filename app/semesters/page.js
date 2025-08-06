@@ -55,7 +55,7 @@ export default function SemestersPage() {
       {/* Semesters Grid */}
       <div className="grid md:grid-cols-2 gap-8">
         {filteredSemesters.map((semester) => (
-          <Card key={semester.id} className="group hover:shadow-card-hover hover:-translate-y-2 transition-all duration-500 border-0 glass dark:glass-dark overflow-hidden hover:scale-105 animate-slide-up">
+          <Card key={semester.id} className="group hover:shadow-card-hover hover:-translate-y-2 transition-all duration-500 border-0 dark:gradient-bg-dark overflow-hidden animate-slide-up">
             {/* Semester Header */}
             <CardHeader className="pb-4 bg-gradient-to-r from-purple-500/5 to-pink-500/5 border-b border-white/10">
               <div className="text-center space-y-2">
@@ -101,7 +101,7 @@ export default function SemestersPage() {
                 </h4>
                 <div className="grid grid-cols-1 gap-2">
                   {semester.subjects.slice(0, 4).map((subject) => (
-                    <div key={subject.id} className="flex items-center justify-between p-3 glass dark:glass-dark rounded-xl hover:bg-white/10 dark:hover:bg-white/5 transition-all duration-200 group/subject">
+                    <div key={subject.id} className="flex items-center justify-between p-3 dark:gradient-bg-dark rounded-xl hover:bg-white/10 dark:hover:bg-white/5 transition-all duration-200 group/subject">
                       <div className="flex items-center gap-2">
                         <span className="text-lg group-hover/subject:scale-110 transition-transform">{subject.emoji}</span>
                         <span className="text-sm font-medium text-foreground group-hover/subject:text-primary transition-colors font-inter">{subject.name}</span>
@@ -151,11 +151,11 @@ export default function SemestersPage() {
 
       {/* Other Resources Column */}
       <div className="space-y-6">
-        <div className="rounded-2xl p-6 glass dark:glass-dark border border-purple-500/20 hover:scale-105 transition-all duration-300">
-          <h2 className="text-xl font-bold font-poppins text-center mb-4 text-purple-800 dark:text-purple-200">
+        <div className="rounded-2xl p-6 dark:gradient-bg-dark border border-purple-500/20 transition-all duration-300">
+          <h2 className="text-xl font-bold font-poppins text-center mb-4 text-purple-800 dark:text-purple-800">
             📚 Other Resources
           </h2>
-          <p className="text-sm text-center text-purple-700 dark:text-purple-300 mb-6 font-inter">
+          <p className="text-sm text-center text-purple-700 dark:text-purple-700 mb-6 font-inter">
             Quick access to syllabus, calendar, and key academic info.
           </p>
 
@@ -163,7 +163,7 @@ export default function SemestersPage() {
             <li>
               <Link
                 href="https://drive.google.com/file/d/1XikF2fuyvXvt627ardxAT9_IKETNtShA/view?usp=sharing" target='blank'
-                className="flex items-center gap-3 glass dark:glass-dark hover:bg-white/20 dark:hover:bg-white/10 transition-all px-4 py-3 rounded-xl text-foreground group hover:scale-105"
+                className="flex items-center gap-3 dark:gradient-bg-dark hover:bg-white/20 dark:hover:bg-white/10 transition-all px-4 py-3 rounded-xl text-foreground group hover:scale-102"
               >
                 <BookOpen className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 <span className="font-medium font-inter">Syllabus</span>
@@ -172,7 +172,7 @@ export default function SemestersPage() {
             <li>
               <Link
                 href="https://drive.google.com/file/d/1V0Ux4cNT2N0-NauSVtwvaXVqcq1Coj5L/view?usp=drive_link" target='blank'
-                className="flex items-center gap-3 glass dark:glass-dark hover:bg-white/20 dark:hover:bg-white/10 transition-all px-4 py-3 rounded-xl text-foreground group hover:scale-105"
+                className="flex items-center gap-3 dark:gradient-bg-dark hover:bg-white/20 dark:hover:bg-white/10 transition-all px-4 py-3 rounded-xl text-foreground group hover:scale-102"
               >
                 <Clock className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 <span className="font-medium font-inter">Academic Calendar</span>
@@ -181,7 +181,7 @@ export default function SemestersPage() {
             <li>
               <Link
                 href="https://fee-payments.bennett.edu.in/" target='blank'
-                className="flex items-center gap-3 glass dark:glass-dark hover:bg-white/20 dark:hover:bg-white/10 transition-all px-4 py-3 rounded-xl text-foreground group hover:scale-105"
+                className="flex items-center gap-3 dark:gradient-bg-dark hover:bg-white/20 dark:hover:bg-white/10 transition-all px-4 py-3 rounded-xl text-foreground group hover:scale-102"
               >
                 <ReceiptIndianRupee className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 <span className="font-medium font-inter">Official Fee Website</span>
@@ -190,7 +190,7 @@ export default function SemestersPage() {
             <li>
               <Link
                 href="https://www.bennett.edu.in/" target='blank'
-                className="flex items-center gap-3 glass dark:glass-dark hover:bg-white/20 dark:hover:bg-white/10 transition-all px-4 py-3 rounded-xl text-foreground group hover:scale-105"
+                className="flex items-center gap-3 dark:gradient-bg-dark hover:bg-white/20 dark:hover:bg-white/10 transition-all px-4 py-3 rounded-xl text-foreground group hover:scale-102"
               >
                 <GraduationCap className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 <span className="font-medium font-inter">Bennett Official Website</span>
@@ -199,7 +199,7 @@ export default function SemestersPage() {
             <li>
               <Link
                 href="/cgpa-calculator"
-                className="flex items-center gap-3 glass dark:glass-dark hover:bg-white/20 dark:hover:bg-white/10 transition-all px-4 py-3 rounded-xl text-foreground group hover:scale-105"
+                className="flex items-center gap-3 dark:gradient-bg-dark hover:bg-white/20 dark:hover:bg-white/10 transition-all px-4 py-3 rounded-xl text-foreground group hover:scale-102"
               >
                 <Calculator className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 <span className="font-medium font-inter">CGPA Calculator</span>
@@ -208,7 +208,7 @@ export default function SemestersPage() {
             <li>
               <Link
                 href="https://onedrive.live.com/?authkey=%21AL7D4UGKHQa%2DUyg&id=16E1A3480CFEA7CF%21561&cid=16E1A3480CFEA7CF" target='blank'
-                className="flex items-center gap-3 glass dark:glass-dark hover:bg-white/20 dark:hover:bg-white/10 transition-all px-4 py-3 rounded-xl text-foreground group hover:scale-105"
+                className="flex items-center gap-3 dark:gradient-bg-dark hover:bg-white/20 dark:hover:bg-white/10 transition-all px-4 py-3 rounded-xl text-foreground group hover:scale-102"
               >
                 <GraduationCap className="w-5 h-5 group-hover:scale-110 transition-transform" />
                 <span className="font-medium font-inter">PYQ's by Full Stack Club</span>
